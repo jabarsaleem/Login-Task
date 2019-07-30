@@ -1,0 +1,16 @@
+﻿
+<h1>Welcome @ViewBag.UserName</h1>
+
+@if(ViewBag.Role=="admin" && ViewBag.status=="active")
+
+{
+<h3>Welcome to dashbord</h3>
+}
+
+
+else
+
+{
+    @if(ViewBag.status == "active") { <h1>Welcome to my store</h1>}
+
+}
